@@ -1,0 +1,44 @@
+body {
+	background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.my-image {
+  width: 700px;        /* Ширина картинки */
+  height: auto;        /* Авто-высота, чтобы не растягивалась */
+  display: block;      /* Убирает лишние отступы снизу */
+  margin: 0 auto;  
+  margin-top: 80px;   
+  border: 2px solid whitesmoke;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 63px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 350;
+  transform: scaleY(2.0);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 83px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 350;
+  transform: scaleY(2.0);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+  margin-top: 200px;
+}
+p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 43px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  transform: scaleY(1.5);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  margin-top: 100px;
+}

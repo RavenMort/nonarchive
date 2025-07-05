@@ -1,0 +1,171 @@
+body {
+	background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+	color: whitesmoke;
+	
+	text-align: center;
+	font-size: 63px;
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 350;
+	transform: scaleY(2.5);
+	margin-top: 70px;
+	text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+.hero{
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.timebox{
+    display: flex;
+    gap: 50px;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+.time{
+    text-align: center;
+}
+
+.time h2{
+    font-size: 5rem;
+    font-weight: 350;
+    font-family: "IBM Plex Serif", serif;
+    transform: scaleY(2.0);
+}
+    .cross {
+      margin-top: 460px;
+      display: grid;
+      grid-template-columns: repeat(5, 200px);
+      grid-auto-rows: 160px;
+      gap: 0px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+
+    .block {
+      background-color: #black;
+      font-family: monospace;
+      font-size: 30px;
+      overflow: hidden;
+      position: relative;
+      padding: 0 4px;
+      display: flex;
+      align-items: center;
+      border: 3px solid whitesmoke; /* цвет бордера */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+    }
+
+    .marquee {
+      display: flex;
+  width: max-content;
+      white-space: nowrap;
+      padding-left: -50%;
+      animation: scroll-left 30s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Размещение блоков в виде креста */
+ .block:not(.active) {
+      visibility: hidden;
+    }
+
+    .block.active {
+      visibility: visible;
+      color: #00ff99;
+      text-shadow:
+    0 0 5px rgba(0, 255, 153, 0.9),
+    0 0 10px rgba(0, 204, 122, 0.7),
+    0 0 15px rgba(0, 255, 153, 0.6);
+    }
+.block.red {
+      visibility: visible;
+      color: #ff9900;
+  text-shadow:
+    0 0 5px rgba(255, 153, 0, 0.9),
+    0 0 10px rgba(255, 140, 0, 0.7),
+    0 0 15px rgba(255, 170, 51, 0.6);
+    }
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1000px;
+}
+
+.my-button {
+  padding: 12px 24px;
+  background: transparent;    /* прозрачный фон */
+  border: 2px solid whitesmoke;  /* твой контур */
+  color: whitesmoke;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.my-button:hover {
+  background: black;
+  color: white;
+}
+p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 17px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+.centered-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирует всё */
+}
+.cross-container {
+   position: relative;
+  display: flex;
+  justify-content: center; /* центрирует крест */
+  width: 600px;
+  height: 800px;
+  background: black;
+}
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 800px;
+  pointer-events: none; /* Чтобы SVG не перекрывал клики */
+  z-index: 10;
+  text-shadow: 0 0 10px white;
+}
+
+.label {
+  fill: white;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 20px;
+  text-shadow: 0 0 5px white;
+}
